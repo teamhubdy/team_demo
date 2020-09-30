@@ -13,14 +13,17 @@ public class MemberService {
 
     public Long join(Member member){
 
-        memberRepository.findByName(member.getName()).ifPresent(m->{
-            throw new IllegalStateException("invalid member name!");
-        });
-        
+        validateDuplicateMember(member);
         memberRepository.save(member);
+
         return member.getId();
     }
 
+    private void validateDuplicateMember(Member member){
+        memberRepository.findByName(member.getName()).ifPresent(m->{
+            throw new IllegalStateException("invalid member name!");
+        });
+    }
 
     public List<Member> findMembers(){
         return memberRepository.findAll();

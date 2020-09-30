@@ -1,0 +1,6 @@
+com/example/demo/DemoApplicationTests.java
+ com.example.demo.DemoApplicationTests
+com/example/demo/repository/MemoryMemberRepositoryTest.java
+ com.example.demo.repository.MemoryMemberRepositoryTest
+com/example/demo/service/MemberServiceTest.java
+ com.example.demo.service.MemberServiceTest
