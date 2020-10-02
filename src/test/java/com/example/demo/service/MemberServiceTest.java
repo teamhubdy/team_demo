@@ -24,6 +24,11 @@ public class MemberServiceTest {
     }
 
     @Test
+    void 중복회원가입(){
+        Member member1 = new Member();
+    }
+
+    @Test
     void findMembers(){
         
     }
