@@ -7,6 +7,8 @@ import com.example.demo.domain.Member;
 import com.example.demo.repository.MemberRepository;
 import com.example.demo.repository.MemoryMemberRepository;
 
+// test commit from mac
+
 public class MemberService {
     
     private final MemberRepository memberRepository;
