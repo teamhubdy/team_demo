@@ -41,7 +41,7 @@ public class MemberServiceTest {
     }
 
     @Test
-    void 중복회원가입(){
+    void join2(){
         // given
         Member member1 = new Member();
         member1.setName("spring1");
